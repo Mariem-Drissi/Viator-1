@@ -1,12 +1,12 @@
-// src/App.js
-import React from "react";
-import User from "./components/User";
+import React from 'react';
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Viator Travel App</h1>
-      <User />
+    <div>
+      <Navbar />
+      <Banner />
     </div>
   );
 }

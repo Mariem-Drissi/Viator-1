@@ -1,0 +1,104 @@
+.banner {
+    position: relative;
+    background-image: url('../assets/images/italie.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row; /* Align form fields horizontally */
+    gap: 20px; /* Space between fields */
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap fields on smaller screens */
+}
+
+.combobox-container {
+    position: relative;
+    flex-grow: 1; /* Allow combobox to grow */
+    max-width: 300px; /* Limit width */
+}
+
+.combobox {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.number-of-persons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-number {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.number-of-persons label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Styles for suggestions */
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    list-style-type: none; /* Remove the default dot */
+    margin: 0; /* Remove margin to avoid extra spacing */
+    padding: 0; /* Remove padding to avoid extra spacing */
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}

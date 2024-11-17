@@ -6,7 +6,7 @@ const User = () => {
   const [newUser, setNewUser] = useState({ name: "", email: "", password: "" });
   const [loading, setLoading] = useState(false);
 
-  // Fetch all users from the backend
+
   useEffect(() => {
     setLoading(true);
     axios
@@ -21,7 +21,6 @@ const User = () => {
       });
   }, []);
 
-  // Handle input change for the new user form
   const handleChange = (e) => {
     const { name, value } = e.target;
     setNewUser((prevState) => ({
