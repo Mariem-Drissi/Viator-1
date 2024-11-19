@@ -1,12 +1,10 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Banner from './components/Banner';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Banner />
+      <LandingPage />
     </div>
   );
 }
