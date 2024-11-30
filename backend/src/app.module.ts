@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';  // Import the UserModule
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -19,7 +20,8 @@ import { UsersModule } from './users/users.module';  // Import the UserModule
         synchronize: true,  // Auto-sync schema
       }),
     }),
-    UsersModule,  // Import the UsersModule instead of TypeOrmModule.forFeature([User])
+    UsersModule,
+    AuthModule,  // Import the UsersModule instead of TypeOrmModule.forFeature([User])
   ],
 })
 export class AppModule {}
