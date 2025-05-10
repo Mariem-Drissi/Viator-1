@@ -89,7 +89,7 @@ const Banner = () => {
           </div>
 
           <div className="number-of-persons">
-            <label>Number of People</label>
+            <h6>Number of People</h6>
             <input
               type="number"
               value={numberOfPersons}

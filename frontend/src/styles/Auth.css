@@ -1,0 +1,73 @@
+.auth-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/images/travel-plan.jpg') no-repeat center center/cover;
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+  
+  .auth-logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .auth-title {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .auth-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 30%;
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .auth-form .auth-button {
+    background-color: #c66c13;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .auth-form .auth-button:hover {
+    background-color: #8f4b02;
+  }
+  
+  .auth-form p a {
+    color: #ae5f0f;
+    text-decoration: none;
+  }
+  
+  .auth-form p a:hover {
+    text-decoration: underline;
+  }
+  
